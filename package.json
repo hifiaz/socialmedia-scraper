@@ -1,7 +1,7 @@
 {
-  "name": "scrapme",
+  "name": "socialmedia-scrapper",
   "version": "1.0.0",
-  "description": "scraping data",
+  "description": "scraping social media like twitter, instagram, youtube",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -r esm index.js --ignore '*.json'",
@@ -9,7 +9,8 @@
   },
   "keywords": [
     "scraper",
-    "scrape"
+    "scrape",
+    "social media"
   ],
   "author": "hiFiaz",
   "license": "ISC",
