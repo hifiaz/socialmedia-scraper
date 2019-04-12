@@ -7,7 +7,8 @@ import {
   getYoutube,
   recentInstagram,
   algoliaTwitter,
-  deleteTwitter
+  deleteTwitter,
+  streamTwitter
 } from "./lib/scraper";
 
 const app = express();
@@ -22,6 +23,10 @@ app.get("/scrape", async (req, res, next) => {
 
 app.get("/twitter", async (req, res, next) => {
   searchTwitter("javascript");
+  res.json("Twitter Success Grab Data!");
+});
+app.get("/twitter-stream", async (req, res, next) => {
+  streamTwitter("bank mandiri");
   res.json("Twitter Success Grab Data!");
 });
 
